@@ -24,4 +24,17 @@ function App() {
   );
 }
 
-export default Connect(mapStateToProps, madDispatchToProps)(App);
+const mapStateToProps = (state) => {
+  return {
+    state:  
+    state:
+    state:
+  }
+}
+
+const madDispatchToProps = {
+  action1,
+  action2,
+}
+
+export default connect(mapStateToProps, madDispatchToProps)(App);
