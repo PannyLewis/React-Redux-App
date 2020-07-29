@@ -3,7 +3,7 @@ import { FETCH_START, FETCH_SUCCESS, FETCH_FAILURE } from "../actions";
 const initialState = {
   isFetching: false,
   fetchError: null,
-  names: [], // need an empty array so that the .map has somewhere to place its new array
+  quotes: [], // need an empty array so that the .map has somewhere to place its new array
 };
 
 export const Reducer = (state = initialState, action) => {
@@ -13,7 +13,7 @@ export const Reducer = (state = initialState, action) => {
         ...state,
         isFetching: true,
         error: null,
-        names: [],
+        quotes: [],
       };
 
     case FETCH_SUCCESS:
@@ -21,7 +21,7 @@ export const Reducer = (state = initialState, action) => {
         ...state,
         isFetching: false,
         error: null,
-        names: action.payload,
+        quotes: action.payload,
       };
 
     case FETCH_FAILURE:
@@ -29,7 +29,7 @@ export const Reducer = (state = initialState, action) => {
         ...state,
         isFetching: false,
         error: action.payload,
-        names: [],
+        quotes: [],
       };
     default:
       return state;
