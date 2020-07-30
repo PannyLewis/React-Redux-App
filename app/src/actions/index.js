@@ -8,9 +8,11 @@ export const fetchAllNames = () => (dispatch) => {
   dispatch({ type: FETCH_START });
 
   axios
-    .get("https://breaking-bad-quotes.herokuapp.com/v1/quotes/5")
+    .get(
+      "https://programming-quotes-api.herokuapp.com/quotes" /*"https://breaking-bad-quotes.herokuapp.com/v1/quotes/5"*/
+    )
     .then((res) => {
-      //   console.log(res.data);
+      console.log(res.data);
       dispatch({
         type: FETCH_SUCCESS,
         payload: res.data,
@@ -24,5 +26,3 @@ export const fetchAllNames = () => (dispatch) => {
       });
     });
 };
-
-// export const fetchNameList =

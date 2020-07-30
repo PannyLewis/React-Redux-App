@@ -9,9 +9,9 @@ const FetchNames = (props) => {
 
   return (
     <div>
-      <h1>FAMOUS QUOTES FROM BREAKING BAD</h1>
+      <h1>INSPIRING QUOTES</h1>
       {props.quotes.map((quote) => {
-        return <p>{quote.quote}</p>;
+        return <p>{quote.en}</p>;
       })}
     </div>
   );
