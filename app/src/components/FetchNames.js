@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { fetchAllNames } from "../actions";
-import styled from "styled-coponents";
+import styled from "styled-components";
 
 const StyledDiv = styled.div`
   border: 1px solid black;
