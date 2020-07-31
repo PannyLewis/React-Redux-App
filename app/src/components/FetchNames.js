@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { fetchAllNames } from "../actions";
+import styled from "styled-coponents";
+
+const StyledDiv = styled.div`
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: lightblue;
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 2.5% auto;
+`;
 
 const FetchNames = (props) => {
   useEffect(() => {
@@ -10,9 +20,11 @@ const FetchNames = (props) => {
   return (
     <div>
       <h1>INSPIRING QUOTES</h1>
-      {props.quotes.map((quote) => {
-        return <p>{quote.en}</p>;
-      })}
+      <StyledDiv key={props.quotes.id}>
+        {props.quotes.map((quote) => {
+          return <p> {quote.en} </p>;
+        })}
+      </StyledDiv>
     </div>
   );
 };
