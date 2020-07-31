@@ -16,30 +16,36 @@ In this project you'll choose an api to consume. You will build an application f
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal.
-- [ ] CD into the project base directory `cd React-Redux-App`.
-- [ ] Run `npx create-react-app app --use-npm` to make a CRA app.
-- [ ] CD into the react app `cd app`.
-- [ ] Start up the app using `npm start`.
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your team lead as collaborator on Github.
+- [x] Clone your OWN version of the repository in your terminal.
+- [x] CD into the project base directory `cd React-Redux-App`.
+- [x] Run `npx create-react-app app --use-npm` to make a CRA app.
+- [x] CD into the react app `cd app`.
+- [x] Start up the app using `npm start`.
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
+
+install dependencies:
+npm install react-redux redux
+npm install redux-logger
+npm install redux-thunk
+npm install axios
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete by merging the branch back into master.
+- [x] Do your magic!
 
 ## Minimum Viable Product
 
-- [ ] Build a React Redux app
-- [ ] Fetch data inside an async action creator from an API of your choosing
-- [ ] Add the data from the API to the Redux store
-- [ ] Display the data from the store in a component
+- [x] Build a React Redux app
+- [x] Fetch data inside an async action creator from an API of your choosing
+- [x] Add the data from the API to the Redux store
+- [x] Display the data from the store in a component
 - [ ] _Some_ styling must be applied. It can be basic, but the app must not only use browser default stylings
 
 ## Directions
@@ -51,3 +57,5 @@ Once you have chosen an API to consume, build an app that makes sense for the da
 ## Stretch Problems
 
 Take the app as far as you can go! Styling, redux hooks, another API, an input to fetch data dynamically, etc. Work on it, improve it until the end of the day. If you find yourself finishing with time left to spare, jump on with your TL or fellow student to ask them what feature they think you should build next. Good luck!
+
+cloned and branched 07/27/20 pnl
